@@ -1,0 +1,8 @@
+##sequence-region AHB59323.1 1 550
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1421435
+AHB59323.1	Genbank	region	1	550	.	+	.	ID=AHB59323.1:1..550;Dbxref=taxon:1421435;Name=4;collection-date=Jan-2011;country=USA;gbkey=Src;genome=genomic;mol_type=unassigned;nat-host=Homo sapiens;segment=4;serotype=H3N2;strain=A/USA/RVD1_H3/2011
+AHB59323.1	Genbank	polypeptide	1	550	.	+	.	ID=id-AHB59323.1:1..550;calculated_mol_wt=61728;function=receptor binding and fusion protein;gbkey=Prot;partial=true;product=hemagglutinin;start_range=.,1
+AHB59323.1	Genbank	mature_protein_region	1	329	.	+	.	ID=id-AHB59323.1:1..329;calculated_mol_wt=36452;gbkey=Prot;product=HA1
+AHB59323.1	Genbank	biological_region	13	505	.	+	.	ID=id-AHB59323.1:13..505;Dbxref=CDD:395409;Name=Hemagglutinin;Note=Haemagglutinin;gbkey=Region
+AHB59323.1	Genbank	mature_protein_region	330	550	.	+	.	ID=id-AHB59323.1:330..550;calculated_mol_wt=25294;gbkey=Prot;product=HA2
+
