@@ -25,4 +25,5 @@ A1260C -- synonymous
 $ java -jar ~/VarScan.v2.4.4.jar  mpileup2snp my.mpileup --min-var-freq 0.001 --variants --output-vcf 1 > VarScan_results_0_1.vcf
 ```
 A254G (0.19%) -- missense D73G
+
 C307T (0.95%) -- missense P91S
