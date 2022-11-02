@@ -1,4 +1,4 @@
-# Viral evolution
+# Viral evolution. Lab Notebook
 
 ```
 $ wget http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR170/001/SRR1705851/SRR1705851.fastq.gz
