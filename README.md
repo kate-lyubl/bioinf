@@ -74,4 +74,5 @@ $ java -jar ~/VarScan.v2.4.4.jar  mpileup2snp control_3.mpileup --min-var-freq 0
 ```
 
 C307T (0.95%) -- missense P91S => epitope E
+
 T1458C (0.83%) -- synonymous
