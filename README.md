@@ -1,8 +1,15 @@
 # Viral evolution. Lab Notebook
 
+We downloaded the sequenced reads from the link by the `wget` command. 
 ```
 $ wget http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR170/001/SRR1705851/SRR1705851.fastq.gz
+```
+Then we run fastqc for sequenced reads (look at SRR1705851_fastqc.html file).
+```
 $ fastqc -o . SRR1705851.fastq.gz 
+```
+We run the bwa-mem algorithm for alignment and process the results with the VarScan program. To find the global differences between roommate strain and reference, we set the frequency threshold equal to 0.95.
+```
 $ bwa index sequence.fasta
 $ bwa mem sequence.fasta SRR1705851.fastq.gz | samtools view -S -b - | samtools sort - -o roommate.bam
 $ samtools flagstat roommate.bam
@@ -11,45 +18,51 @@ $ samtools mpileup -f sequence.fasta roommate.bam -d 32011 >  my.mpileup
 $ java -jar ~/VarScan.v2.4.4.jar  mpileup2snp my.mpileup --min-var-freq 0.95 --variants --output-vcf 1 > VarScan_results_95.vcf
 $ cat VarScan_results_95.vcf | awk 'NR>24 {print $1, $2, $4, $5}' | wc -l
 ```
-A72G -- synonymous
+There were five mutations:
 
-C117T -- synonymous
+1. A72G -- synonymous
 
-T774C -- synonymous
+2. C117T -- synonymous
 
-C999T -- synonymous
+3. T774C -- synonymous
 
-A1260C -- synonymous
+4. C999T -- synonymous
 
+5. A1260C -- synonymous
+
+Then we wanted to find the mutated viral particles by setting the frequency threshold equal to 0.001.
 ```
 $ java -jar ~/VarScan.v2.4.4.jar  mpileup2snp my.mpileup --min-var-freq 0.001 --variants --output-vcf 1 > VarScan_results_0_1.vcf
 ```
-A254G (0.19%) -- missense D73G
+There were thirteen new mutations:
 
-C307T (0.95%) -- missense P91S
+1. A254G (0.19%) -- missense D73G
 
-T340C (0.18%) -- missense S101P
+2. C307T (0.95%) -- missense P91S
 
-T389C (0.23%) -- missense V118A
+3. T340C (0.18%) -- missense S101P
 
-A722G (0.23%) -- missense D229G
+4. T389C (0.23%) -- missense V118A
 
-A744G (0.18%) -- synonymous
+5. A722G (0.23%) -- missense D229G
 
-A802G (0.24%) -- missense M256V
+6. A744G (0.18%) -- synonymous
 
-T915C (0.2%) -- synonymous
+7. A802G (0.24%) -- missense M256V
 
-A1043G (0.19%) -- missense D336G
+8. T915C (0.2%) -- synonymous
 
-A1086G (0.21%) -- synonymous 
+9. A1043G (0.19%) -- missense D336G
 
-A1213G (0.22%) -- missense R393G
+10. A1086G (0.21%) -- synonymous 
 
-T1280C (0.18%) -- missense L415P
+11. A1213G (0.22%) -- missense R393G
 
-T1458C (0.83%) -- synonymous
+12. T1280C (0.18%) -- missense L415P
 
+13. T1458C (0.83%) -- synonymous
+
+Among these mutations, there are errors from the sequencer. That's why sequencing of a homogenous viral population was done three times. We repeated the procedure with these three controls.
 ```
 $ cat VarScan_results_0_1.vcf | awk 'NR>24 {print $1, $2, $4, $5}' | wc -l
 $ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR170/008/SRR1705858/SRR1705858.fastq.gz
@@ -72,7 +85,8 @@ $ java -jar ~/VarScan.v2.4.4.jar  mpileup2snp control_1.mpileup --min-var-freq 0
 $ java -jar ~/VarScan.v2.4.4.jar  mpileup2snp control_2.mpileup --min-var-freq 0.001 --variants --output-vcf 1 > VarScan_control_2_results_0_1.vcf
 $ java -jar ~/VarScan.v2.4.4.jar  mpileup2snp control_3.mpileup --min-var-freq 0.001 --variants --output-vcf 1 > VarScan_control_3_results_0_1.vcf
 ```
+Then we filter the mutations by the VarScanParser script. You can find the html file with the results. Overall, there were two significant mutations:
 
-C307T (0.95%) -- missense P91S => epitope E
+1. C307T (0.95%) -- missense P91S => mutation in epitope E
 
-T1458C (0.83%) -- synonymous
+2. T1458C (0.83%) -- synonymous
