@@ -54,3 +54,23 @@ We BLASTed protein sequences against the “UniProtKB/Swiss-Prot” database and
 | g7861.t1   | A0A6L2PMM2       | SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A-like protein 1 | Coptotermes formosanus | 299 | 38.5 | 1.2E-88 |
 | g8100.t1   | A0A7F5RFC7       | putative inositol monophosphatase 3 | Agrilus planipennis | 204 | 37.9        | 1.6E-54  |
 | g8312.t1   | A0A8J1UKA6       | Vacuolar protein sorting-associated protein 41 homolog | Owenia fusiformis | 637 | 42.6 | 0 |
+
+## Pfam prediction
+
+We predicted the function of the proteins using HMMER (web-version, https://www.ebi.ac.uk/Tools/hmmer/).
+
+| Query Name | Top Hit Identifier | Description |
+|------------|--------------------|-------------|
+| g10513.t1  |         -          |      -      |
+| g10514.t1  |         -          |      -      |
+| g11806.t1  |         -          |      -      |
+| g11960.t1  |      zf-C3HC4      | Zinc finger, C3HC4 type (RING finger) |
+| g14472.t1  |         -          |      -      |
+| g15484.t1  |        Vps51       | Vps51/Vps67 |
+| g16318.t1  |         -          |      -      |
+| g16368.t1  |         -          |      -      |
+| g5927.t1   |         -          |      -      |
+| g7861.t1   |     SNF2-rel_dom   | SNF2-related domain |
+| g8100.t1   |     Inositol_P     | Inositol monophosphatase family |
+| g8312.t1   |      Clathrin      | Region in Clathrin and VPS |
+ 
