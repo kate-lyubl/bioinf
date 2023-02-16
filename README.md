@@ -215,35 +215,27 @@ $ awk '($32!="-") ' cIuF4BeDdMAKbTLS.txt | grep risk_factor | cut -f 1-3 | sort 
 
 |ID|Position|Nucleotide|Annotation|
 |--|--------|----------|----------|
-|rs1024611|	17:32579788-32579788|	G|affects the production of a chemokine involved in inflammatory responses and is independently associated with an increased risk of exercise-induced ischemia, but its relevance to HIV has also been discussed|
-|rs1049296|	3:133494354-133494354|	T|responsible for encoding the C1/C2 subtypes of the transferrin TF gene, with the rarer rs1049296(T) allele associated with a slightly increased risk for Alzheimer's disease and potentially reducing the effectiveness of bacterial transferrin binding proteins.|
-|rs10757274|	9:22096055-22096055|	G|predictor of early myocardial infarction, as well as associated with increased risk of stroke, abdominal aortic aneurysm, and intracranial aneurysm, however it does not improve discrimination or classification of predicted heart disease risk on its own, and other SNPs in the region, such as rs2383206, can double the risk of heart disease, while rs10757278 is linked to diabetes|
-|rs1169288|	12:121416650-121416650|	C|linked to lower HDL cholesterol in those with the Ile/Ile genotype and a common haplotype containing minor alleles of rs1169288 associated with lower CRP levels|
-|rs12150220|	17:5485367-5485367|	T|associated with higher risk for autoimmune Addison's disease and type-1 diabetes in large patient cohorts from six different autoimmune diseases and healthy controls|
-|rs13266634|	8:118184783-118184783|	T|linked to type-2 diabetes|
-|rs1801197|	7:93055753-93055753|	G|Bone mineral density quantitative trait locus 15|
-|rs1801274|	1:161479745-161479745|	G|associated with a variety of conditions including HIV, lymphoma, hemophilia A, malaria, and systemic lupus erythematosus, as well as with response to immunotherapeutic treatments such as cetuximab, infliximab, rituximab, and 3F8.|
+|rs1049296|	3:133494354-133494354|	T|very slightly higher risk for Alzheimers|
+|rs10757274|	9:22096055-22096055|	G|increased risk for heart disease|
+|rs12150220|	17:5485367-5485367|	T|slightly increased risk for several autoimmune diseases|
+|rs13266634|	8:118184783-118184783|	T|increased risk for type-2 diabetes|
 |rs1801275|	16:27374400-27374400|	G|susceptibility to Atopy|
-|rs1801394|	5:7870973-7870973|	G|higher risk for meningioma|
-|rs1801968|	9:132580901-132580901|	G|modifier of Dystonia 1 torsion|
-|rs2004640|	7:128578301-128578301|	T|associated with systemic lupus erythematosus (SLE)|
-|rs2073658|	1:161010762-161010762|	T|susceptibility to Hyperlipidemia|
+|rs2004640|	7:128578301-128578301|	T|1.4x increased risk for SLE|
 |rs2184026|	9:101304348-101304348|	T|susceptibility to Tobacco addiction|
-|rs2239704|	6:31540141-31540141|	C|susceptibility to Leprosy|
 |rs2241880|	2:234183368-234183368|	G|associated with Crohn's Disease|
-|rs2281845|	1:201081943-201081943|	T|susceptibility	to Thyrotoxic periodic paralysis|
-|rs231775|	2:204732714-204732714|	G|Hashimoto thyroiditis, susceptibility to Thyroid-associated orbitopathy, susceptibility to Systemic lupus erythematosus, susceptibility to Diabetes mellitus, insulin-dependent, susceptibility to Celiac disease 3|
+|rs2281845|	1:201081943-201081943|	T|tooth eruption|
+|rs231775|	2:204732714-204732714|	G|Autoimmune thyroid disease|
 |rs4402960|	3:185511687-185511687|	T|	Type 2 diabetes|
 |rs4880|	6:160113872-160113872|	G|Microvascular complications of diabetes|
 |rs4961|	4:2906707-2906707|	T|1.8x increased risk for high blood pressure|
 |rs4977574|	9:22098574-22098574|	G|risk for myocardial infarction|
-|rs5174|	1:53712727-53712727|	T|Myocardial infarction|
-|rs5186|	3:148459988-148459988|	C|increased risk of hypertension|
+|rs5174|	1:53712727-53712727|	T|General risk tolerance (MTAG)|
+|rs5186|	3:148459988-148459988|	C|~1.4x increased risk of hypertension|
 |rs61747071|	16:53720436-53720436|	T|Retinitis pigmentosa in ciliopathies Joubert syndrome not specified Nephronophthisis Meckel-Gruber syndrome|
-|rs6265|	11:27679916-27679916|	T|Slightly increased risk for ADHD or depression; somewhat quicker mental decline in Alzheimer patients|
+|rs6265|	11:27679916-27679916|	T|General risk tolerance (MTAG)|
 |rs6280|	3:113890815-113890815|	T|Schizophrenia, susceptibility to Essential tremor, susceptibility to Hereditary|
 |rs6504649|	17:48437456-48437456|	G|Pseudoxanthoma elasticum|
-|rs699|	1:230845794-230845794|	G|increased risk of hypertension|
+|rs699|	1:230845794-230845794|	G|increased risk of Hypertension, Preeclampsia, Susceptibility to progression to renal failure in IgA nephropathy|
 |rs763110|	1:172627498-172627498|	T|~0.80x reduced cancer risk|
 |rs7794745|	7:146489606-146489606|	T|slightly increased risk for autism|
 |rs909253|	6:31540313-31540313|	G|susceptibility to Myocardial infarction, Psoriatic arthritis|
