@@ -541,3 +541,15 @@ $ cat feature_counts.txt | cut -f 1,7-10 > simple_counts.txt
 ```
 
 ### Find differentially expressed genes with Deseq2
+```
+$ cat simple_counts.txt | R -f deseq2.R
+$ cat norm-matrix-deseq2.txt | R -f draw_heatmap.R
+```
+Heatmap is in the results folder.
+
+## Result Interpretation
+```
+$ head -n 50 result.txt | cut -f 1 | cut -d "-" -f 2 > genes.txt
+```
+
+GO results also can be found in results folder.
